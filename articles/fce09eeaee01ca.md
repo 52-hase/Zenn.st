@@ -21,6 +21,15 @@ end
 
 MyClass.class_method  # => "class method"
 ```
+```
+class MyClass（レシピ本）
+  def self.class_method（ハンバーガーのレシピ）
+    puts "This is a class method"（ハンバーガーの作り方）
+  end
+end
+
+MyClass.class_method  # => "This is a class method"（ハンバーガーの作り方）
+```
 
 ```
 class Cookbook
