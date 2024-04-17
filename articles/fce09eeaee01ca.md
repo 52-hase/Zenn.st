@@ -5,13 +5,17 @@ type: "tech" # tech: 技術記事 / idea: アイデア
 topics: [クラスメソッド, インスタンスメソッド]
 published: false
 ---
+
 # 目的
-クラスメソッド と インスタンスメソッド の違いについて学重した内容を記載します。
+
+クラスメソッド と インスタンスメソッド の違いについて学習した内容を記載します。
 
 # 内容
 
 # クラスとは？
-・クラスとはレシピブックや設計図のようなものです。MyClassは特定のタイプのオブジェクトの設計図であり、その中にclass_methodという手順が定義されています。
+
+・クラスとは「レシピブック」や「設計図」のようなものです。下記のように`MyClass`は特定のタイプのオブジェクトの設計図であり、その中に`class_method`という手順が定義されています。
+
 ```
 class MyClass
   def class_method
@@ -21,6 +25,9 @@ end
 
 MyClass.class_method  # => "class method"
 ```
+
+::::details MyClass を レシピ本 に例えた場合
+
 ```
 class MyClass（レシピ本）
   def self.class_method（ハンバーガーのレシピ）
@@ -30,13 +37,16 @@ end
 
 MyClass.class_method  # => "This is a class method"（ハンバーガーの作り方）
 ```
+⇩ 記載
 
 ```
-class Cookbook
-  def hamburger_recipe
-    puts "class method: Hamburger Recipe"
+class Cookbook（レシピ本）
+  def hamburger_recipe（ハンバーガーのレシピ）
+    puts "class method: Hamburger Recipe"（ハンバーガーの作り方）
   end
 end
 
-Cookbook.hamburger_recipe  # => "class method: Hamburger Recipe"
+Cookbook.hamburger_recipe  # => "class method: Hamburger Recipe"（ハンバーガーの作り方）
 ```
+
+::::
