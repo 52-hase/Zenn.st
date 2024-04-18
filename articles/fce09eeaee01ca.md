@@ -29,7 +29,6 @@ MyClass.class_method  # => "class method"
 ```
 
 ::::details MyClass を レシピ本 に例えた場合
-
 ```
 class MyClass（レシピ本）
   def self.class_method（ハンバーガーのレシピ）
@@ -39,7 +38,7 @@ end
 
 MyClass.class_method  # => "This is a class method"（ハンバーガーの作り方）
 ```
-⇩ 記載
+　⇩ コードの記載
 
 ```
 class Cookbook（レシピ本）
@@ -50,5 +49,4 @@ end
 
 Cookbook.hamburger_recipe  # => "class method: Hamburger Recipe"（ハンバーガーの作り方）
 ```
-
 ::::
