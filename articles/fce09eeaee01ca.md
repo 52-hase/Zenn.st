@@ -69,3 +69,19 @@ end
 MyClass.class_method
 ```
 
+インスタンスメソッドの例
+```
+class MyClass
+  def instance_method
+    puts "This is an instance method"
+  end
+end
+
+# インスタンスを作成
+my_object = MyClass.new
+
+# インスタンスメソッドを呼び出す方法
+my_object.instance_method
+```
+クラスメソッドはクラスに関連付けられており、クラス名を使って直接呼び出されます。
+インスタンスメソッドはオブジェクトに関連付けられており、そのオブジェクトを介して呼び出されます。
