@@ -20,6 +20,17 @@ published: false
 | ビジュアルモード | 範囲指定、コピー、削除、フィルター |
 | コマンドラインモード | 保存、終了、文字列の置換 |
 
+
 # モードの切り替え
 
 [![Image from Gyazo](https://i.gyazo.com/c664d1f296817dcb65435e80c25e84ce.png)](https://gyazo.com/c664d1f296817dcb65435e80c25e84ce)
+
+# ヘルプ機能
+
+| ヘルプ | 概要 |
+| -- | -- |
+| helphelp | ヘルプの説明 |
+| vim-modes | モードの紹介 |
+| index | 各モードのすべてのコマンド一覧 |
+| quickref | よく使うコマンドのクイックリファレンス |
+| ex-cmd-index | VimのExコマンド一覧 |
