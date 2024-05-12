@@ -32,10 +32,10 @@ published: false
 | helphelp | ヘルプの説明 |
 | vim-modes | モードの紹介 |
 | index | 各モードのすべてのコマンド一覧 |
-| quickref | よく使うコマンドのクイックリファレンス |
 | ex-cmd-index | VimのExコマンド一覧 |
+| quickref | よく使うコマンドのクイックリファレンス |
 | functions-list | 組み込み関数の機能別一覧 |
 | option-list | オプション（cursorlineなど）一覧 |
 | map-overview | マップコマンドとモードの対応表 |
-| usr_41 | Vim scriptの基本 |
 | eval | Vim scriptの仕様相当の内容 |
+| usr_41 | Vim scriptの基本 |
