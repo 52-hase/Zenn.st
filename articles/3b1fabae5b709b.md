@@ -20,6 +20,16 @@ published: false
 ::::details 
 
 '''
+<!DOCTYPE html>
+<html>
+<head>
+    <title>サンプルページ</title>
+</head>
+<body>
+    <h1>Hello, World!</h1>
+    <p>これはサンプルページです。</p>
+</body>
+</html>
 
 
 '''
