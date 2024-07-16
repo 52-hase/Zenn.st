@@ -10,20 +10,12 @@ published: false
 - VSCode
 - Rails 7.1.3.3
 - ruby-3.2.3
-- PostgreSQL 16.2
-
-### 行いたいこと
-- 
-
-### 怒っている問題
-- 
-
-### 原因
-- 
 
 
-# 
+# DOMとは？
+- Document Object Model の略称です。
 
+- DOM は JavaScript 言語の一部ではなく、ウェブサイトを構築するために使用される Web API の 1 つです。
 
 ::::details 
 
