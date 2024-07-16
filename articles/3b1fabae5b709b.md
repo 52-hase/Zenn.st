@@ -31,7 +31,17 @@ published: false
 </body>
 </html>
 
-
 '''
+
+```
+Document
+ ├── html
+ │   ├── head
+ │   │   └── title
+ │   └── body
+ │       ├── h1
+ │       └── p
+
+```
 
 ::::
