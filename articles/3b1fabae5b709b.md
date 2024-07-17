@@ -14,34 +14,30 @@ published: false
 
 # DOMとは？
 - Document Object Model の略称です。
-
 - DOM は JavaScript 言語の一部ではなく、ウェブサイトを構築するために使用される Web API の 1 つです。
 
-::::details 
 
-'''
+# DOMツリー
+```
 <!DOCTYPE html>
-<html>
-<head>
-    <title>サンプルページ</title>
-</head>
-<body>
-    <h1>Hello, World!</h1>
-    <p>これはサンプルページです。</p>
-</body>
+<html>①
+  <head>②
+    <title>サンプルページ</title>③
+  </head>
+  <body>④
+    <h1>Hello, World!</h1>⑤
+    <p>これはサンプルページです。</p>⑥
+  </body>
 </html>
-
-'''
+```
 
 ```
 Document
- ├── html
- │   ├── head
- │   │   └── title
- │   └── body
- │       ├── h1
- │       └── p
+ ├── html①
+ │   ├── head②
+ │   │   └── title③
+ │   └── body④
+ │       ├── h1⑤
+ │       └── p⑥
 
 ```
-
-::::
