@@ -2,7 +2,7 @@
 title: "独自のドメインを取得し設定する"
 emoji: "📚"
 type: "tech" # tech: 技術記事 / idea: アイデア
-topics: []
+topics: [ドメイン, Cloudflare]
 published: false
 ---
 ### 開発環境
@@ -71,6 +71,8 @@ https://www.cloudflare.com
 
 # CNAMEの設定
 
+
+# SSL化の設定確認
 
 
 
