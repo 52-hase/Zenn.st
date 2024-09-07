@@ -1,6 +1,6 @@
 ---
 title: "独自のドメインを取得し設定する"
-emoji: ""
+emoji: "🌐"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: [ドメイン, domain, Cloudflare]
 published: true
