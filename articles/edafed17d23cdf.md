@@ -1,9 +1,9 @@
 ---
 title: "独自のドメインを取得し設定する"
-emoji: "📚"
+emoji: ""
 type: "tech" # tech: 技術記事 / idea: アイデア
-topics: [ドメイン, Cloudflare]
-published: false
+topics: [ドメイン, domain, Cloudflare]
+published: true
 ---
 ### 開発環境
 - macOS
@@ -11,10 +11,11 @@ published: false
 - Rails 7.1.3.3
 - ruby-3.2.3
 - PostgreSQL 16.2
+- Heroku
 
 ### 行いたいこと
-- Herokuの無料プランでデプロイした場合URLは、`https://⚪︎⚪︎⚪︎.herokuapp.com`のようなドメインになっているので独自のドメインに変更したい。
-
+- Herokuの無料プランでデプロイした場合URLは、`https://◯◯◯.herokuapp.com`のようなドメインになっているので独自のドメインに変更したい。
+- 本来Herokuで独自ドメインを設定するためには、`ドメインをSSL化`するために`月額7$`の有料プラン（Hobby）に入会する必要がありますが、今回は`Cloudflare`を使用し`ドメインのSSL化`に対応していきます。
 
 <br>
 <br>
@@ -27,14 +28,14 @@ https://navi.onamae.com/login
 
 :::details 取得の手順
 `アカウントの作成` ⇨ `＋ドメイン登録` ⇨ `検索欄に作成したいドメイン名を入力（小文字）（アンダーバーは不可）` 
-⇨ `.com 0円〜 を選択` ⇨ `ブログ・ホームページ` ⇨ `今回レンタルサーバーは不要なので削除` 
+⇨ `.com （今回は0円〜）を選択` ⇨ `ブログ・ホームページ` ⇨ `今回レンタルサーバーは不要なので削除` 
 ⇨ `支払い方法を入力` ⇨ `完了`
 :::
 <br>
 
 ※今回レンタルサーバーは不要なので以下を削除しました。
 [![Image from Gyazo](https://i.gyazo.com/3e465b9f1f0ae2510e4f1d4f7f89eb96.png)](https://gyazo.com/3e465b9f1f0ae2510e4f1d4f7f89eb96)
-::::
+
 
 
 # Herokuに取得したドメインを設定する
@@ -52,11 +53,15 @@ $ heroku domains
 ・まず`Start for free`から登録する。
 https://www.cloudflare.com
 :::details 設定の手順
+[Cloudflare側]
 ・`ホーム` ⇨ `＋ドメインを追加する`
 
 ・ドメインを追加すると、`追加したドメインの画面` ⇨ `DNS（レコード）`から`Cloudflare ネームサーバー`が
 2つ確認できる。（これを`お名前.comのネームサーバー`に登録する）
-
+<br>
+　　　　　　　　　　　　　　　(参考画像)
+[![Image from Gyazo](https://i.gyazo.com/f46ee3dcd98834e6892ee830fcb0fb56.png)](https://gyazo.com/f46ee3dcd98834e6892ee830fcb0fb56)
+[お名前.com側]
 ・お名前.comの`ご利用中のサービス`から登録したドメインを選択 ⇨ `ネームサーバーの変更`を選択
 ⇨ `その他のサービス`を選択 → `Cloudflare ネームサーバー`の2つをコピペする。
 <br>
@@ -65,18 +70,27 @@ https://www.cloudflare.com
 :::
 
 
-
-
-
-
-# CNAMEの設定
+# Cloudflare で 独自ドメイン経由でアクセスできる様に設定する
+・`追加したドメインの画面` ⇨ `DNS（レコード）` → `DNS管理` → `編集`
+・`タイプ`、`名前（必須）`、`ターゲット（必須）`を入力する。（他はデフォルト）
+(タイプは`CNAME`、名前は`www`、ターゲットは`元のHerokuのドメイン`を入力します。)
+[![Image from Gyazo](https://i.gyazo.com/254c1aacd9f807ad14566764df17aabc.png)](https://gyazo.com/254c1aacd9f807ad14566764df17aabc)
 
 
 # SSL化の設定確認
+・`SSL/TLS（概要）` ⇨ `SSL/TLS 暗号化`の現在の暗号化モードが`フル`になっていることを確認
+[![Image from Gyazo](https://i.gyazo.com/cc97990c870a479bafda210124585d3c.png )](https://gyazo.com/cc97990c870a479bafda210124585d3c)
 
+<br>
 
+・正しく設定できていれば、URLが独自のドメインに変更されています。
+[![Image from Gyazo](https://i.gyazo.com/43b0ce9b6e00f5b8d3f8aa0a19008af2.png =800x)](https://gyazo.com/43b0ce9b6e00f5b8d3f8aa0a19008af2)
 
+<br>
 
+## 以上で独自ドメインの取得から設定は完了です。
+実装や外部ツールで元のHerokuのドメイン設定をしているものがある場合は修正や追加をする。
+(README, OGP, Google認証　など)
 
 <br>
 <br>
