@@ -50,7 +50,7 @@ $ heroku domains
 ```
 
 # CloudflareでドメインをSSL対応させる設定
-・まず`Start for free`から登録する。
+・まず`Start for free`から無料プランで登録する。
 https://www.cloudflare.com
 :::details 設定の手順
 [Cloudflare側]
