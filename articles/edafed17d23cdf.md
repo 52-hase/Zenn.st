@@ -1,5 +1,5 @@
 ---
-title: "独自のドメインを取得し設定する"
+title: "独自のドメインを取得しHerokuに設定する"
 emoji: "🌐"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: [ドメイン, domain, Cloudflare]
@@ -75,7 +75,9 @@ https://www.cloudflare.com
 ・`タイプ`、`名前（必須）`、`ターゲット（必須）`を入力する。（他はデフォルト）
 (タイプは`CNAME`、名前は`www`、ターゲットは`元のHerokuのドメイン`を入力します。)
 [![Image from Gyazo](https://i.gyazo.com/254c1aacd9f807ad14566764df17aabc.png)](https://gyazo.com/254c1aacd9f807ad14566764df17aabc)
-
+:::details Herokuの "DNS Target" について
+Herokuに独自ドメインを登録した際にターゲット入力用の`DNS Target`が発行されますが、それを使用したところ上手くい反映されなかったため、今回は直接元のドメインを入力しました。
+:::
 
 # SSL化の設定確認
 ・`SSL/TLS（概要）` ⇨ `SSL/TLS 暗号化`の現在の暗号化モードが`フル`になっていることを確認
