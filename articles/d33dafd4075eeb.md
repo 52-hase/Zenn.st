@@ -105,6 +105,27 @@ N *= 4736
 N %= 12312
 
 ```
+
+
+・gets.chomp と gets.split の違い
+（そちらもNを取得し出力）
+
+```
+N = gets.chomp
+
+Hello World Ruby
+
+入力された内容がそのまま1つの文字列として扱われ出力もそのまま表示される。
+```
+```
+N = gets.split
+
+Hello
+World
+Ruby
+
+入力文字列をスペースやタブ文字で区切り配列として扱う。
+```
 <br>
 <br>
 <br>
