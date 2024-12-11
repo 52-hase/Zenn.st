@@ -138,6 +138,16 @@ A, B = gets.split.map(&:to_i)
 ```
 puts "#{D} #{P}"
 ```
+
+・範囲を生成とループで出力
+```
+n = gets.to_i
+
+# 1 から N まで順に出力
+(1..n).each do |i|
+  puts i
+end
+```
 <br>
 <br>
 <br>
