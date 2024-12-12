@@ -148,6 +148,75 @@ n = gets.to_i
   puts i
 end
 ```
+
+・分岐
+
+```
+(1..100).each do |i|
+    if i % 3 == 0 && i % 5 == 0
+        puts "FizzBuzz"
+    elsif i % 3 == 0
+        puts "Fizz"
+    elsif i % 5 == 0
+        puts "Buzz"
+    else
+        puts i
+    end
+end
+```
+:::details 解説
+```
+・(1..100) で1から100までの範囲を作成
+・each メソッドで各数字を順に処理
+
+条件分岐で以下を判定
+・3と5の両方で割り切れる場合は "FizzBuzz"
+・3のみで割り切れる場合は "Fizz"
+・5のみで割り切れる場合は "Buzz"
+・どちらでも割り切れない場合はその数字
+
+・puts で各結果を改行付きで出力
+```
+:::
+
+・
+
+```
+Q = gets.to_i
+Q.times do
+    N, M = gets.split.map(&:to_f)
+    
+    rounded = (N * (10 ** M)).round / (10 ** M)
+    printf("%.*f\n", M, rounded)
+end
+```
+:::details 解説
+```
+# 質問の回数を入力から受け取る
+Q = gets.to_i
+
+# Q回繰り返す
+Q.times do
+   # 入力から数値Nと丸める桁数Mを取得
+   # split: 入力文字列を空白で分割
+   # map(&:to_f): 文字列を浮動小数点数に変換
+   N, M = gets.split.map(&:to_f)
+   
+   # 丸め処理の仕組み:
+   # 1. 10^M を掛けて桁を移動
+   # 2. round() で四捨五入
+   # 3. 10^M で割って元の桁に戻す
+   rounded = (N * (10 ** M)).round / (10 ** M)
+   
+   # 指定の小数位まで出力
+   # %.*f: 動的に小数点以下の桁数を指定
+   # \n: 改行
+   printf("%.*f\n", M, rounded)
+end
+```
+:::
+
+
 <br>
 <br>
 <br>
