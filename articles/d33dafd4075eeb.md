@@ -236,6 +236,19 @@ puts "%03d" % N
 ```
 :::
 
+・文字列から指定した範囲を取得する
+https://www.javadrive.jp/ruby/string_class/index5.html#section2
+```
+・文字列sが program の場合
+
+s = gets.chomp
+puts(s[0..2])
+
+> pro
+
+# program
+# 0123456　の数字で範囲取得
+```
 <br>
 <br>
 <br>
