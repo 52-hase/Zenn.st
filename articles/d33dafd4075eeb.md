@@ -249,6 +249,21 @@ puts(s[0..2])
 # program
 # 0123456　の数字で範囲取得
 ```
+
+・配列と等しい要素かの確認をする
+https://docs.ruby-lang.org/ja/latest/method/Array/i/include=3f.html
+```
+A = gets.chomp # 問題の値を取得
+
+menu = gets.split # メニュー名を単語ごとに分割して配列に格納
+
+# menuにAの要素が含まれているか確認する
+if menu.include?(A)
+  puts "YES" # 一致する単語があれば 
+else
+  puts "NO"  # なければ
+end
+```
 <br>
 <br>
 <br>
