@@ -264,6 +264,46 @@ else
   puts "NO"  # なければ
 end
 ```
-<br>
-<br>
-<br>
+
+・条件を満たす要素を抽出して新しいコレクションを返す
+https://docs.ruby-lang.org/ja/latest/method/Array/i/filter.html
+```
+A, B = gets.split.map(&:to_i)
+prices = gets.split.map(&:to_i)
+coupon = prices.select { |price| price >= B }
+
+if coupon.any?
+    max_price = coupon.max
+    prices[prices.index(max_price)] /= 2
+end
+
+puts prices.sum
+```
+:::details 解説
+```
+# A: 商品の数, B: クーポンが適用される条件の価格
+# 標準入力から2つの整数を取得し、それぞれAとBに代入
+A, B = gets.split.map(&:to_i)
+
+# 標準入力から商品価格リストを取得し、数値配列としてpricesに格納
+prices = gets.split.map(&:to_i)
+
+# クーポンが適用可能な商品の価格を抽出 (価格がB以上のもの)
+# selectメソッドで条件を満たす価格のみを新しい配列(coupon)として返す
+coupon = prices.select { |price| price >= B }
+
+# クーポン適用可能な商品が存在する場合
+if coupon.any?
+    # クーポン適用可能商品の中で最も高い価格を取得
+    max_price = coupon.max
+
+    # その価格に対応する要素を元の配列(prices)内で見つけ、その値を半額に更新
+    # prices.index(max_price) で最も高い価格のインデックスを取得
+    prices[prices.index(max_price)] /= 2
+end
+
+# 商品価格の合計を計算し出力
+puts prices.sum
+
+```
+:::
