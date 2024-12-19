@@ -345,3 +345,15 @@ puts result
     end 
 end
 ```
+
+# ・文字列を選択して置き換える
+```
+# 母音の文字列を定義
+v = "aiueoAIUEO"  # 小文字と大文字の母音を一つの文字列で定義
+
+# 文字列を配列に分解して、母音以外の文字を選択
+name = s.chars.select { |char| !v.include?(char) }.join
+# s.chars は文字列を一文字ずつの配列に変換
+# select で母音を除外して、残りの子音を選ぶ
+# join で選ばれた子音を一つの文字列に連結
+```
