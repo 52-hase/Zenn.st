@@ -357,3 +357,20 @@ name = s.chars.select { |char| !v.include?(char) }.join
 # select で母音を除外して、残りの子音を選ぶ
 # join で選ばれた子音を一つの文字列に連結
 ```
+
+# ・重複を削除し配列をかえす
+```
+# 必要な番号の範囲Nを取得
+n = gets.to_i
+
+# 届いたの番号を配列として取得 
+# gets(nil)で残りの入力をすべて読み込み
+# split("\n")で行ごとに分割
+# map(&:to_i)で整数に変換 
+# uniqで重複を除去
+received = gets(nil).split("\n").map(&:to_i).uniq
+
+# 1からN番までののうち、receivedに含まれる数を数え、
+# N(必要な数)から引く
+puts n - received.count{|x| x <= n}
+```
