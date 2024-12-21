@@ -374,3 +374,25 @@ received = gets(nil).split("\n").map(&:to_i).uniq
 # N(必要な数)から引く
 puts n - received.count{|x| x <= n}
 ```
+
+# ・数値の絶対値を返す
+```
+# 標準入力からn回分のデータを取得し、整数の配列に変換
+# エレベーターが止まった各階の情報をflootsに格納
+floots = n.times.map { gets.to_i }
+
+# エレベーターが最初にいる階を1階として初期化
+current_floor = 1
+
+# 合計移動距離を計算するための変数を初期化
+total_distance = 0
+
+# 各階のデータを順に取り出し、移動距離を計算
+floots.each do |next_floor|
+    # 現在の階と次に移動する階の差の絶対値を加算して移動距離を計算
+    total_distance += (next_floor - current_floor).abs
+    
+    # 現在の階を次の階に更新
+    current_floor = next_floor
+end
+```
