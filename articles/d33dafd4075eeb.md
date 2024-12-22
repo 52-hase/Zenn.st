@@ -396,3 +396,29 @@ floots.each do |next_floor|
     current_floor = next_floor
 end
 ```
+
+# ・時間の合計を計算
+```
+# gets.to_i: 標準入力から整数を取得
+# times: N回繰り返し処理を実行
+# gets.chomp: 標準入力から改行を除いて取得
+# split: 文字列を空白で区切って配列に変換
+# split(':'): 文字列をコロンで区切って配列に変換
+# map(&:to_i): 配列の各要素を整数に変換
+# +=: 合計に加算
+# /: 割り算で商を取得
+# %: 割り算で余りを取得
+# #{}: 文字列内で式を評価して埋め込み
+
+N = gets.to_i
+total = 0
+N.times do
+ e, l = gets.chomp.split
+ e_h, e_m = e.split(':').map(&:to_i)
+ l_h, l_m = l.split(':').map(&:to_i)
+ total += (l_h * 60 + l_m) - (e_h * 60 + e_m)
+end
+puts "#{total / 60} #{total % 60}"
+```
+
+# ・
