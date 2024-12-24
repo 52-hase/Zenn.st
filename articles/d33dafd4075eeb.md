@@ -422,3 +422,20 @@ puts "#{total / 60} #{total % 60}"
 ```
 
 # ・
+```
+# 記録を格納する配列を初期化
+records = []
+
+# N 回繰り返して記録を取得し、配列に追加
+n.times { records << gets.to_i }
+
+# 選手の順位を計算
+rankings = records.map do |record|
+  # 現在の記録 `record` より大きい記録の数をカウントし、1 を加える
+  # => 順位の計算: 「記録が大きい人数 + 1」
+  records.count { |r| r > record } + 1
+end 
+
+
+array.count { |element| 条件式 } + 1 の計算を各要素で行う。
+```
