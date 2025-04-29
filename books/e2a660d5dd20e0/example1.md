@@ -8,6 +8,7 @@ title: "AWSとは何？"
 - 特徴として、サーバー、ストレージ、データベースなど、`200以上`のサービスを提供。
 
 # 主なサービスの種類
+- AWSでは、`200以上`のサービスを提供。
 - サーバー:`EC2` 仮想マシン（LinuxやWindowsを動かせる）
 - ストレージ:	`S3` ファイル置き場。画像やHTMLもOK
 - データベース:	`RDS`	MySQL, PostgreSQLなどのDBを簡単構築
@@ -47,5 +48,23 @@ title: "AWSとは何？"
 
 - 運用負荷の削減
 （マネージドサービスやサーバーレスにより運用作業を大幅軽減）
+
+など
+
+
+# AWSアーキテクチャ
+- `アーキテクチャ`は、AWSのいろんなサービスを組み合わせて作る「システム設計図」や「仕組みの考え方」のことを言う。
+
+#### [ 代表的なAWSアーキテクチャ例 ]
+- サーバーレスWebアプリ（API Gateway + Lambda + DynamoDB + S3）
+- 静的ウェブサイトホスティング（S3 + CloudFront）
+- フルマネージドWebアプリ（ALB + EC2 + RDS）
+- コンテナベースのアプリ（ECS/Fargate + ALB）
+- CI/CDパイプライン（CodeCommit + CodeBuild + CodeDeploy + CodePipeline）
+- データレイク構成（S3 + Glue + Athena + Redshift）
+- リアルタイム通信アプリ（API Gateway + Lambda + DynamoDB）
+- 機械学習パイプライン（SageMaker + S3 + Lambda + CloudWatch）
+- セキュアなVPC構成（VPC + NAT Gateway + Private Subnet + Security Group）
+- モバイルアプリのバックエンド（Cognito + AppSync + DynamoDB + S3）
 
 など
