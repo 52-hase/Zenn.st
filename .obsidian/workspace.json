@@ -87,6 +87,18 @@
                 }
               },
               {
+                "id": "a9880977720386e4",
+                "type": "leaf",
+                "state": {
+                  "type": "release-notes",
+                  "state": {
+                    "currentVersion": "1.11.4"
+                  },
+                  "icon": "lucide-book-up",
+                  "title": "Release Notes 1.11.4"
+                }
+              },
+              {
                 "id": "b16399bace811d58",
                 "type": "leaf",
                 "pinned": true,
@@ -235,7 +247,8 @@
                   "title": "Terminal: zsh"
                 }
               }
-            ]
+            ],
+            "currentTab": 1
           }
         ],
         "direction": "horizontal"
@@ -411,7 +424,7 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "4758e6439ba19beb",
+  "active": "a9880977720386e4",
   "lastOpenFiles": [
     "articles/5e4ef4cc22f120.md",
     "articles/ba72774c836fb8.md",
