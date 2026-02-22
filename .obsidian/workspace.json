@@ -426,6 +426,7 @@
   },
   "active": "a9880977720386e4",
   "lastOpenFiles": [
+    "articles/4423992fb14949.md",
     "node_modules/zenn-cli/dist/server/zenn.js.map",
     "node_modules/zenn-cli/dist/client/assets/index-BHnCaYCL.js",
     "node_modules/zenn-cli/dist/client/assets/index-Vi7YarHa.js",
@@ -438,7 +439,6 @@
     "node_modules/is-inside-container/package.json",
     "node_modules/default-browser/package.json",
     "node_modules/is-inside-container/index.js",
-    "node_modules/is-inside-container/cli.js",
     "node_modules/is-docker/readme.md",
     "node_modules/package-manager-detector/README.md",
     "node_modules/define-lazy-prop/readme.md",
