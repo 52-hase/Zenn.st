@@ -95,7 +95,19 @@
                     "currentVersion": "1.11.4"
                   },
                   "icon": "lucide-book-up",
-                  "title": "Release Notes 1.11.4"
+                  "title": "リリースノート 1.11.4"
+                }
+              },
+              {
+                "id": "514e1eea8fbeac03",
+                "type": "leaf",
+                "state": {
+                  "type": "release-notes",
+                  "state": {
+                    "currentVersion": "1.12.4"
+                  },
+                  "icon": "lucide-book-up",
+                  "title": "リリースノート 1.12.4"
                 }
               },
               {
@@ -248,7 +260,7 @@
                 }
               }
             ],
-            "currentTab": 1
+            "currentTab": 2
           }
         ],
         "direction": "horizontal"
@@ -413,18 +425,18 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:新規ベースを作成": false,
       "switcher:クイックスイッチャーを開く": false,
       "graph:グラフビューを開く": false,
       "canvas:新規キャンバスを作成": false,
       "daily-notes:今日のデイリーノートを開く": false,
       "templates:テンプレートを挿入": false,
       "command-palette:コマンドパレットを開く": false,
-      "bases:Create new base": false,
       "terminal:Open terminal": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "a9880977720386e4",
+  "active": "514e1eea8fbeac03",
   "lastOpenFiles": [
     "articles/4423992fb14949.md",
     "node_modules/zenn-cli/dist/server/zenn.js.map",
