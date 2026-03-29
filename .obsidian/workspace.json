@@ -40,7 +40,8 @@
                   "title": "818354c480c763"
                 }
               }
-            ]
+            ],
+            "currentTab": 1
           },
           {
             "id": "e9a9aef8543f7644",
@@ -436,7 +437,7 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "514e1eea8fbeac03",
+  "active": "c0516dbc126b3372",
   "lastOpenFiles": [
     "node_modules/zenn-cli/dist/client/assets/index-D6wjqh8r.js",
     "node_modules/zenn-cli/dist/client/assets/index-BjIB8LUz.css",
