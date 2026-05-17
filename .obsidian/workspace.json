@@ -39,9 +39,21 @@
                   "icon": "lucide-file",
                   "title": "818354c480c763"
                 }
+              },
+              {
+                "id": "8e4b5767dcde5ee2",
+                "type": "leaf",
+                "state": {
+                  "type": "release-notes",
+                  "state": {
+                    "currentVersion": "1.12.7"
+                  },
+                  "icon": "lucide-book-up",
+                  "title": "リリースノート 1.12.7"
+                }
               }
             ],
-            "currentTab": 1
+            "currentTab": 2
           },
           {
             "id": "e9a9aef8543f7644",
@@ -437,7 +449,7 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "c0516dbc126b3372",
+  "active": "8e4b5767dcde5ee2",
   "lastOpenFiles": [
     "node_modules/zenn-cli/dist/client/assets/index-D6wjqh8r.js",
     "node_modules/zenn-cli/dist/client/assets/index-BjIB8LUz.css",
