@@ -44,12 +44,14 @@
                 "id": "8e4b5767dcde5ee2",
                 "type": "leaf",
                 "state": {
-                  "type": "release-notes",
+                  "type": "markdown",
                   "state": {
-                    "currentVersion": "1.12.7"
+                    "file": "articles/21161ba7e00b18.md",
+                    "mode": "source",
+                    "source": false
                   },
-                  "icon": "lucide-book-up",
-                  "title": "リリースノート 1.12.7"
+                  "icon": "lucide-file",
+                  "title": "21161ba7e00b18"
                 }
               }
             ],
@@ -308,7 +310,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Obsidian",
+                "query": "211",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -451,6 +453,8 @@
   },
   "active": "8e4b5767dcde5ee2",
   "lastOpenFiles": [
+    "articles/22132964944ecf.md",
+    "無題のファイル.base",
     "node_modules/zenn-cli/dist/client/assets/index-D6wjqh8r.js",
     "node_modules/zenn-cli/dist/client/assets/index-BjIB8LUz.css",
     "articles/4423992fb14949.md",
@@ -463,8 +467,6 @@
     "node_modules/default-browser/index.d.ts",
     "node_modules/default-browser/readme.md",
     "node_modules/default-browser/windows.js",
-    "node_modules/is-inside-container/package.json",
-    "node_modules/default-browser/package.json",
     "node_modules/is-docker/readme.md",
     "node_modules/package-manager-detector/README.md",
     "node_modules/define-lazy-prop/readme.md",
