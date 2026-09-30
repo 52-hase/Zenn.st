@@ -53,9 +53,21 @@
                   "icon": "lucide-file",
                   "title": "21161ba7e00b18"
                 }
+              },
+              {
+                "id": "6139f463ddb0910a",
+                "type": "leaf",
+                "state": {
+                  "type": "release-notes",
+                  "state": {
+                    "currentVersion": "1.13.7"
+                  },
+                  "icon": "lucide-book-up",
+                  "title": "リリースノート 1.13.7"
+                }
               }
             ],
-            "currentTab": 2
+            "currentTab": 3
           },
           {
             "id": "e9a9aef8543f7644",
@@ -451,7 +463,7 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "8e4b5767dcde5ee2",
+  "active": "6139f463ddb0910a",
   "lastOpenFiles": [
     "articles/6a8692a87ccaaf.md",
     "articles/22132964944ecf.md",
